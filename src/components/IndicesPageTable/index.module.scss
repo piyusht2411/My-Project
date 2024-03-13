@@ -1,0 +1,182 @@
+.im10Table {
+  .bottomButton {
+    display: flex;
+    margin: auto;
+    width: 20rem;
+    justify-content: center;
+    border-radius: 0.3rem;
+    margin-top: 4rem;
+  }
+  p {
+    color: #9fdddd;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19.2px;
+    text-align: center;
+    span {
+      color: white;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19.2px;
+    }
+  }
+  .table {
+    // margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fixed {
+      border-right: 1px solid #5773dd;
+      width: 33%;
+      .bottomRow {
+        border-bottom-left-radius: 0.5rem;
+      }
+      .box {
+        height: 60px;
+        background-color: #274f8a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid transparent;
+        // border-top-left-radius: 0.5rem;
+        .heading {
+          font-weight: 900;
+          font-size: 12px;
+          line-height: 14.4px;
+          color: #00d7fb;
+        }
+      }
+      .coin {
+        height: 60px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        padding-left: 1rem;
+        .indexNo {
+          p {
+            color: #00d7fb;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 14.4px;
+          }
+        }
+        .imageDiv {
+          .coinLogo {
+            width: 100%;
+          }
+        }
+        .nameDiv {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: baseline;
+          height: 100%;
+          .coinName {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16.8px;
+            color: white;
+          }
+          .coinAbbr {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16.8px;
+            color: white;
+          }
+        }
+      }
+    }
+    .scrollable {
+      width: 67%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .price {
+        width: 50%;
+        border-right: 1px solid #5773dd;
+        .box {
+          height: 60px;
+          background-color: #274f8a;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .heading {
+            font-weight: 900;
+            font-size: 12px;
+            line-height: 14.4px;
+            color: #00d7fb;
+          }
+        }
+        .coinPrice {
+          p {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 17px;
+            letter-spacing: 0em;
+            color: white;
+          }
+        }
+      }
+      .dominance {
+        width: 50%;
+        // border-right: 1px solid #5773dd;
+        .box {
+          height: 60px;
+          background-color: #274f8a;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          gap: 0.5rem;
+          .heading {
+            font-weight: 900;
+            font-size: 12px;
+            line-height: 14.4px;
+            color: #00d7fb;
+          }
+        }
+        .coinDominance {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 0.3rem;
+          p {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 17px;
+            letter-spacing: 0em;
+            color: white;
+          }
+          .progressBar {
+            width: 60%;
+            background-color: #274f8a;
+            height: 8px;
+            border-radius: 0.3rem;
+            padding: 1px;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .indexTop10 {
+    h1 {
+      font-size: 21px;
+      line-height: 25.2px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 21px;
+      span {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }
+}

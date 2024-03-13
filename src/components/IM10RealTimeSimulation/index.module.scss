@@ -1,0 +1,20 @@
+.im10RealTimeSimulation {
+  width: 40vw;
+  .heading {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28.8px;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .description {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .simulationBox {
+    padding: 2rem;
+  }
+}

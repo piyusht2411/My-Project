@@ -1,0 +1,82 @@
+.blogBanner {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  .blogBannerImage {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1rem 100px;
+    .calendarAndDate {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .text {
+        padding: 0.8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .blogBanner {
+    .overlay {
+      padding: 0.6rem 30px;
+      h1 {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .blogBanner {
+    .overlay {
+      padding: 0.4rem 30px;
+      h1 {
+        font-size: 1.1rem;
+      }
+      .calendarAndDate {
+        .calendarSvg {
+          img {
+            width: 80%;
+          }
+        }
+        p {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 469px) {
+  .blogBanner {
+    .overlay {
+      padding: 0.3rem 30px;
+      h1 {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 433px) {
+  .blogBanner {
+    .overlay {
+      padding: 0.3rem 30px;
+      h1 {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

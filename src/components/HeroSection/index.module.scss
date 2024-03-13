@@ -1,0 +1,60 @@
+.heroSection {
+  padding: 0;
+  font-size: 12px;
+  height: 550px;
+  background-image: linear-gradient(#1b2759, #300a6e);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  .description {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    .heading {
+      span {
+        font-weight: bolder;
+        font-size: 1.4em;
+      }
+    }
+
+    .subHeading {
+      margin-top: 15px;
+      font-size: 1.25em;
+      font-weight: bolder;
+    }
+
+    .desc {
+      margin-top: 15px;
+      margin-bottom: 30px;
+      font-size: 1.2em;
+      line-height: 20px;
+      font-weight: 300;
+    }
+  }
+}
+
+@media screen and (min-width: 662px) {
+  .heroSection {
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 450px;
+
+    .description {
+      text-align: start;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-top: 70px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .heroSection {
+    padding: 0;
+  }
+}

@@ -1,0 +1,230 @@
+.howitWorksPage {
+  display: flex;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  gap: 50px;
+}
+.videoText p {
+  font-weight: 300;
+}
+.rightConatiner {
+  width: 100%;
+}
+.videoTextNormal {
+  font-weight: 300;
+}
+.pagePara h3 {
+  font-size: 1.7rem;
+  margin-bottom: 1.8rem;
+  margin-top: 1.8rem;
+}
+.pagePara p {
+  font-size: 1.1rem;
+  text-wrap: wrap;
+  line-height: 1.8;
+  font-weight: 300;
+}
+.middlePara {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.middlePara p {
+  width: 55%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.shipImageConatiner {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shipImageConatiner p {
+  width: fit-content;
+  color: #00d7fb;
+  text-decoration: underline;
+}
+.hambuger {
+  display: none;
+}
+.videoconatiner {
+  background-color: #180e4d;
+  padding: 1.4rem;
+  border-radius: 0.8rem;
+}
+.videoText {
+  text-align: center;
+}
+.videoText p {
+  font-size: 1.2rem;
+  padding-top: 1.3rem;
+  font-weight: 300;
+}
+.videoTextHightlight {
+  font-weight: bold;
+}
+.videoDescription {
+  font-size: 0.9rem !important;
+  color: #4da6ff;
+}
+.navContainer {
+  height: 340px;
+  width: 143px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 37vh;
+  z-index: 100;
+}
+.navMainContainer {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.navSideBorder {
+  background-color: #0f204e;
+  border-radius: 10px 0px 0px 10px;
+  height: inherit;
+  width: 10px;
+  position: absolute;
+  right: 0px;
+  z-index: -1;
+}
+.navItem1 {
+  display: flex;
+  align-items: center;
+  height: 57px;
+  width: 143px;
+}
+.navItem2 {
+  display: flex;
+  align-items: center;
+  height: 57px;
+  width: 143px;
+}
+.navItem3 {
+  display: flex;
+  align-items: center;
+  height: 57px;
+  width: 143px;
+}
+.navItem4 {
+  display: flex;
+  align-items: center;
+  height: 57px;
+  width: 143px;
+}
+.navItem1:hover {
+  background-image: url('../assets/svg/simulatorNavHover.svg');
+}
+.navItem1:hover p {
+  color: white;
+}
+.navItem1:hover img {
+  content: url('../assets/svg/simulatorSelected-icon.svg');
+}
+.navItem2:hover {
+  background-image: url('../assets/svg/simulatorNavHover.svg');
+}
+.navItem2:hover p {
+  color: white;
+}
+.navItem2:hover img {
+  content: url('../assets/svg/chartSelected-icon.svg');
+}
+.navItem3:hover {
+  background-image: url('../assets/svg/simulatorNavHover.svg');
+}
+.navItem3:hover p {
+  color: white;
+}
+.navItem3:hover img {
+  content: url('../assets/svg/topIndexSelected.svg');
+}
+.navItem4:hover {
+  background-image: url('../assets/svg/simulatorNavHover.svg');
+}
+.navItem4:hover p {
+  color: white;
+}
+.navItem4:hover img {
+  content: url('../assets/svg/realTimeSimulatorSelected.svg');
+}
+.navItemImg {
+  height: 32px;
+  width: 32px;
+  margin-left: 18px;
+}
+.navItemText {
+  font-size: x-small;
+  color: #00d7fb;
+  text-align: center;
+}
+.navTextContainer {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .navContainer {
+    z-index: 100;
+  }
+  .navMainContainer {
+    display: none;
+  }
+  .showSideBar {
+    display: flex;
+    transition: left 0.4s;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .leftConatiner {
+    position: fixed;
+    left: -100%;
+    transition: left 0.4s;
+    opacity: 100%;
+    z-index: 9999;
+    background-color: #040c29;
+    width: auto;
+    top: 5.3rem;
+  }
+  .hambuger {
+    display: block;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 3rem;
+  }
+  .howitWorksPage {
+    gap: 0;
+    .showMenu {
+      left: 0 !important;
+      top: 5.8rem;
+      overflow: auto;
+      height: 100vh;
+      scrollbar-width: none;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .middlePara {
+    flex-direction: column;
+  }
+  .middlePara p {
+    width: 100%;
+  }
+  .shipImageConatiner {
+    width: 100%;
+  }
+}

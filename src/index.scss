@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+$primary-color: #000c28;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: $primary-color;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 16px;
+  width: 100%;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+}
+//calender => react date picker
+.react-date-picker__wrapper {
+  border: none !important;
+}
+@media (min-width: 400px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 990px) {
+  .container {
+    padding: 0 100px;
+  }
+}

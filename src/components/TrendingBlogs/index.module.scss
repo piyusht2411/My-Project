@@ -1,0 +1,35 @@
+.trendingBlogs {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .blogLogo {
+    width: 23%;
+    .blogImage {
+      width: 100%;
+    }
+  }
+  .blogContent {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3px;
+    p {
+      font-size: 14px;
+      font-weight: 200;
+    }
+  }
+}
+
+@media only screen and (min-width: 581px) and (max-width: 768px) {
+  .trendingBlogs {
+    justify-content: flex-start;
+    gap: 2rem;
+    margin: 1rem 0;
+    .blogContent {
+      width: auto;
+    }
+  }
+}

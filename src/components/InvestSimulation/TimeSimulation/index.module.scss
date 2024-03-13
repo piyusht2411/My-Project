@@ -1,0 +1,91 @@
+.sectionConatiner {
+  background: linear-gradient(180deg, #0f204e 0.7%, #300a6e 100.14%);
+  width: 38rem;
+  position: relative;
+  border-radius: 1.5rem;
+  .upperContainer {
+    padding: 3rem;
+    h2 {
+      padding-bottom: 1.3rem;
+      font-weight: 300;
+    }
+    .inputBoxConatiner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .inputBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+      }
+      .rightPart {
+        h4 {
+          font-size: 1.2rem;
+          font-weight: 300;
+        }
+        p {
+          color: #00d7fb;
+          font-weight: bold;
+          text-align: center;
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .borderLine {
+      height: 0.5rem;
+      width: 100%;
+      background: linear-gradient(
+        0deg,
+        #274f8a 1.86%,
+        rgba(22, 25, 85, 0.0311467) 22.24%,
+        #000c28 103.75%
+      );
+      border-radius: 2rem;
+      margin-top: 1.2rem;
+      margin-bottom: 1.1rem;
+    }
+    .investSubmitConatiner {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      .investAmount {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          padding-bottom: 1.3rem;
+          .firstText {
+            font-size: 1.2rem;
+            font-weight: 300;
+            padding-right: 0.3rem;
+          }
+          .secondText {
+            color: #2b5c9a;
+            font-size: 1.1rem;
+          }
+          .thirdText {
+            font-weight: bold;
+            font-size: 1.1rem;
+          }
+        }
+        .button {
+          width: 10rem;
+        }
+      }
+    }
+  }
+  .wave {
+    width: 99.8%;
+    position: absolute;
+    top: 74%;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    text-align: unset;
+  }
+}
+@media screen and (max-width: 720px) {
+  .sectionConatiner {
+    display: none;
+  }
+}

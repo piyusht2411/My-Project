@@ -1,0 +1,55 @@
+.surroundingDiv {
+  width: 140px;
+  height: 46px;
+  padding: 2px;
+  background-color: #000c28;
+  border: 1px solid #398196;
+  border-radius: 10px;
+  .innerDiv {
+    background-image: linear-gradient(#9fdddd, #d4f0f0);
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .text {
+      width: 60%;
+      height: 100%;
+      input::placeholder {
+        color: #000c28;
+      }
+      input:focus {
+        outline: none;
+      }
+      input:focus::placeholder {
+        color: transparent;
+      }
+      .inputBox {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.2px;
+      }
+      .inputBox::-webkit-inner-spin-button,
+      .inputBox::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+    .optional {
+      width: 5%;
+      height: 100%;
+    }
+  }
+}

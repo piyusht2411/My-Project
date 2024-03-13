@@ -1,0 +1,33 @@
+.gradientHeader {
+  background-image: linear-gradient(#0f0e3e, #000c28);
+  padding: 4rem 2rem 2rem 2rem;
+  h1 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.45rem;
+    margin-bottom: 2rem;
+  }
+  p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .gradientHeader {
+    padding: 2rem 2rem;
+    h1 {
+      font-size: 1.3rem;
+      line-height: 1.95rem;
+      color: #00d7fb;
+    }
+    p {
+      font-size: 0.9rem;
+      line-height: 1.55rem;
+    }
+  }
+}

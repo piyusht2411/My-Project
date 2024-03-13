@@ -1,0 +1,27 @@
+@import '../../index.scss';
+
+.button {
+  padding: 0.7rem 1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: #00d7fb;
+  background-color: transparent;
+  border-radius: 0.25rem;
+  border-color: #00d7fb;
+  outline: none;
+  border-width: 1px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: #00d7fb;
+  color: $primary-color;
+  cursor: pointer;
+}

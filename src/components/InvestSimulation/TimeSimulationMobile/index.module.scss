@@ -1,0 +1,90 @@
+.sectionConatiner {
+  background: linear-gradient(180deg, #0f204e 0.7%, #300a6e 100.14%);
+  position: relative;
+  display: none;
+  .mainConatiner {
+    padding: 1.8rem;
+    padding-bottom: 3rem;
+    .inputBoxContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h2 {
+        font-size: 1rem;
+        color: #00d7fb;
+      }
+    }
+    .borderLine {
+      height: 0.5rem;
+      width: 100%;
+      background: linear-gradient(
+        0deg,
+        #274f8a 1.86%,
+        rgba(22, 25, 85, 0.0311467) 22.24%,
+        #000c28 103.75%
+      );
+      border-radius: 2rem;
+      margin-top: 1.2rem;
+      margin-bottom: 1.1rem;
+    }
+    .priceContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px dashed;
+      padding-bottom: 0.8rem;
+      margin-bottom: 1rem;
+      h4 {
+        font-weight: 300;
+      }
+      p {
+        color: #00d7fb;
+        font-weight: bold;
+      }
+    }
+    .totalPriceContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px dashed;
+      padding-bottom: 0.8rem;
+      margin-bottom: 1rem;
+      h4 {
+        font-weight: 300;
+      }
+      p {
+        span {
+          font-weight: bold;
+        }
+        .dollarSign {
+          color: #00d7fb;
+          font-weight: unset;
+          padding-right: 1px;
+        }
+      }
+    }
+    .button {
+      width: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      margin-top: 2rem;
+    }
+  }
+  .aboveWave {
+    position: absolute;
+    width: 100%;
+    bottom: 94%;
+  }
+  .belowWave {
+    position: absolute;
+    width: 100%;
+    top: 91%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .sectionConatiner {
+    display: block;
+  }
+}

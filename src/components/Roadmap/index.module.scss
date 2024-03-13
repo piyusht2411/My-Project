@@ -1,0 +1,369 @@
+.roadMap {
+  // margin: 3rem 0;
+  font-weight: 400;
+  font-style: normal;
+  // padding: 0 3rem;
+  margin: 3 auto;
+  h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .subHead {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .linedButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .linedBtnWrapper {
+      width: 100%;
+
+      p {
+        margin-top: 10px;
+        margin-left: -5px;
+        display: flex;
+        align-self: flex-start;
+      }
+
+      .lineFill {
+        border: 1px solid #00d7fb;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+      }
+    }
+    .linedBtnWrapper:last-child {
+      width: min-content;
+    }
+
+    .linedBtn {
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    .linedBtn:last-child {
+      width: min-content;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  .startDate {
+    position: absolute;
+    top: 70%;
+    left: 2.5%;
+  }
+
+  .endDate {
+    position: absolute;
+    top: 20%;
+    right: 2.5%;
+  }
+
+  .milestones {
+    p {
+      text-align: center;
+      font-size: 13px;
+      margin: 10px 0;
+    }
+
+    .q1a {
+      position: absolute;
+      bottom: 40%;
+      left: 8%;
+      width: 15%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 20%;
+      color: #00d7fb;
+    }
+    .q1b {
+      position: absolute;
+      top: 70%;
+      left: 8%;
+      width: 15%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 18%;
+      color: #4da6ff;
+    }
+    .q2a {
+      position: absolute;
+      bottom: 45%;
+      left: 28%;
+      width: 19%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 35%;
+      color: #00d7fb;
+    }
+    .q2b {
+      position: absolute;
+      top: 70%;
+      left: 28%;
+      width: 19%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 20%;
+      color: #4da6ff;
+    }
+    .q3a {
+      position: absolute;
+      bottom: 57%;
+      right: 29%;
+      width: 19%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 20%;
+      color: #00d7fb;
+    }
+    .q3b {
+      position: absolute;
+      top: 63%;
+      right: 29%;
+      width: 19%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 20%;
+      color: #4da6ff;
+    }
+    .q4a {
+      position: absolute;
+      bottom: 77%;
+      right: 10%;
+      width: 15%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 15%;
+      color: #00d7fb;
+    }
+    .q4b {
+      position: absolute;
+      top: 45%;
+      right: 6%;
+      width: 17%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 15%;
+      color: #4da6ff;
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .roadMap {
+    .milestones {
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .roadMap {
+    .milestones {
+      p {
+        font-size: 8px;
+        margin: 5px 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .roadMap {
+    img {
+      width: 45px;
+    }
+    .roadmap {
+      .roadmapDivs {
+        .leftCorner {
+          .earth {
+            width: 80px;
+            // top: 28%;
+          }
+        }
+        .rightCorner {
+          .planet {
+            width: 100px;
+            top: 28%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
+  .roadMap {
+    img {
+      width: 40px;
+    }
+    .linedButtons {
+      width: 80%;
+    }
+    .roadmap {
+      .roadmapDivs {
+        .leftCorner {
+          .earth {
+            width: 70px;
+            // top: 34%;
+            bottom: 15%;
+          }
+        }
+        .rightCorner {
+          .planet {
+            width: 90px;
+            top: 30%;
+          }
+        }
+      }
+    }
+  }
+  .roadmap {
+    p {
+      font-size: 0.8rem;
+      line-height: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .roadMap {
+    img {
+      width: 35px;
+    }
+    .linedButtons {
+      width: 90%;
+    }
+    .roadmap {
+      .roadmapDivs {
+        .leftCorner {
+          .earth {
+            width: 65px;
+            // top: 35%;
+            bottom: 10%;
+          }
+        }
+        .rightCorner {
+          .planet {
+            width: 80px;
+            top: 33%;
+          }
+        }
+      }
+    }
+  }
+  .roadmap {
+    p {
+      font-size: 0.7rem;
+      line-height: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .roadMap {
+    img {
+      width: 30px;
+    }
+    .linedButtons {
+      width: 100%;
+    }
+    .roadmap {
+      .roadmapDivs {
+        .leftCorner {
+          .earth {
+            width: 60px;
+            // top: 36%;
+            bottom: 9%;
+          }
+        }
+        .rightCorner {
+          .planet {
+            width: 70px;
+            top: 36%;
+          }
+        }
+      }
+    }
+  }
+  .roadmap {
+    p {
+      font-size: 0.5rem;
+      line-height: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .roadMap {
+    img {
+      width: 30px;
+    }
+    .linedButtons {
+      width: 100%;
+    }
+
+    .roadmap {
+      .roadmapDivs {
+        .leftCorner {
+          .earth {
+            width: 50px;
+            // top: 38%;
+            bottom: 8%;
+          }
+        }
+        .rightCorner {
+          .planet {
+            width: 50px;
+            top: 38%;
+          }
+        }
+      }
+    }
+  }
+  .roadmap {
+    p {
+      font-size: 0.3rem;
+      line-height: 1rem;
+    }
+  }
+}

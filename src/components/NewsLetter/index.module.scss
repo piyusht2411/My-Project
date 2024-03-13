@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+// .newsLetterConatineer {
+//   padding-top: 5rem;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-bottom: 100px;
+// }
+
+// .newsLetterMainConatineer {
+//   background: linear-gradient(180deg, #0f204e 0.7%, #300a6e 100.14%);
+//   padding: 0.5rem;
+//   border: 1px solid transparent;
+//   border-radius: 0.4rem;
+//   position: relative;
+//   width: 80vw;
+//   max-width: 50rem;
+// }
+
+// .newsLetter {
+//   border: 1px dashed #4da6ff;
+//   border-radius: 0.8rem;
+//   padding: 1.8rem;
+//   padding-bottom: 120px;
+//   position: relative;
+//   .newsletterLeftCornerSvg {
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     .newsletterLeftCornerSvgImage {
+//       opacity: 0.8;
+//     }
+//   }
+// }
+// .newsLetter h3,
+// .newsLetter p {
+//   position: relative;
+//   text-align: center;
+//   z-index: 10;
+// }
+// .newsLetter h3 {
+//   font-size: 1.5rem;
+// }
+// .newsLetter p {
+//   padding-top: 1.1rem;
+//   font-size: 1rem;
+// }
+// // .InputContainer{
+// //    text-align: center;
+// // }
+// .InputOuterContainer {
+//   padding-top: 1.3rem;
+//   margin: auto;
+// }
+// .InputInnerContainer {
+//   display: flex;
+//   justify-content: center;
+// }
+// .InputBox {
+//   background-color: #00d7fb;
+//   // width: 17.17rem;
+//   max-width: 300px;
+//   color: black;
+//   padding: 0.06rem;
+//   padding-left: 0.089rem;
+//   padding-bottom: 0.089rem;
+// }
+
+// .InputBox input {
+//   padding: 0.7rem;
+//   // width: 17rem;
+//   width: '100%';
+//   background: linear-gradient(180deg, #9fdddd 3.52%, #ffffff 96.14%);
+//   color: black;
+
+//   border-radius: 0.3rem;
+// }
+// .InputBox input:hover {
+//   background: white;
+// }
+// .InputBox input:hover::placeholder {
+//   color: white;
+// }
+// .subscribeBtn {
+//   width: 8rem;
+//   background-color: #00d7fb;
+//   color: black;
+//   border: none;
+// }
+// .rocketIcon {
+//   position: absolute;
+//   right: -30px;
+//   bottom: 0px;
+//   rotate: 0deg;
+//   animation: rocket 1s ease-in 2s;
+// }
+// .pathIcon {
+//   position: absolute;
+//   bottom: -5px;
+//   right: 0;
+//   width: 10;
+// }
+// .Mail1Icon {
+//   // blue
+//   position: absolute;
+//   bottom: -30px;
+//   right: 0px;
+//   left: 100px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+// .Mail2Icon {
+//   position: absolute;
+//   bottom: -10px;
+//   right: 0;
+//   left: 300px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+// .Mail3Icon {
+//   // bluewop
+//   position: absolute;
+//   bottom: -50px;
+//   right: 0;
+//   left: 400px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// @media screen and (max-width: 850px) {
+//   .Mail1Icon {
+//     // blue
+//     left: 70px;
+//   }
+//   .Mail2Icon {
+//     left: 200px;
+//   }
+//   .Mail3Icon {
+//     // bluewop
+//     left: 300px;
+//   }
+// }
+
+// @media screen and (max-width: 700px) {
+//   .Mail1Icon {
+//     // blue
+//     left: -90px;
+//   }
+//   .Mail2Icon {
+//     left: 50px;
+//   }
+//   .Mail3Icon {
+//     // bluewop
+//     left: 200px;
+//   }
+// }
+
+// @media screen and (max-width: 480px) {
+//   .Mail1Icon {
+//     // blue
+//     left: -180px;
+//   }
+// }
+
+// @media screen and (max-width: 600px) {
+//   .InputInnerContainer {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+//   .subscribeBtn {
+//     height: 2rem;
+//     width: 10rem;
+//     margin-top: 1rem;
+//   }
+//   .subscribeBtn {
+//     height: 2rem;
+//   }
+//   .InputOuterContainer {
+//     width: auto;
+//   }
+// }
+
+// @media screen and (min-width: 940px) {
+//   .newsLetter {
+//     padding-bottom: 70px;
+//   }
+// }
+
+// @keyframes rocket {
+//   // 0% {
+//   //   right: 200px;
+//   //   bottom: -110px;
+//   //   rotate: 10deg;
+//   // }
+
+//   // 70% {
+//   //   right: 50px;
+//   //   bottom: -40px;
+//   // }
+
+//   // 100% {
+//   //   right: -30px;
+//   //   bottom: 0px;
+//   //   rotate: 0deg;
+//   // }
+// }
+
+.newsLetterConatineer {
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.newsLetterMainConatineer {
+  background: linear-gradient(180deg, #0f204e 0.7%, #300a6e 100.14%);
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.4rem;
+  position: relative;
+  width: 80vw;
+  max-width: 50rem;
+  height: 19rem;
+}
+.newsLetter {
+  border: 1px dashed #4da6ff;
+  border-radius: 0.8rem;
+  padding: 2.3rem;
+  padding-bottom: 120px;
+  position: relative;
+  height: 17.8rem;
+  h3 {
+    font-weight: bold;
+  }
+  p {
+    font-weight: 300;
+  }
+  .newsletterLeftCornerSvg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    .newsletterLeftCornerSvgImage {
+      opacity: 0.8;
+    }
+  }
+}
+.newsLetter h3,
+.newsLetter p {
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+.newsLetter h3 {
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 29.05px;
+}
+.newsLetter p {
+  padding-top: 1.1rem;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  line-height: 24px;
+}
+// .InputContainer{
+//    text-align: center;
+// }
+.InputOuterContainer {
+  padding-top: 1.3rem;
+  margin: auto;
+}
+.InputInnerContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.InputBox {
+  background-color: #00d7fb;
+  // width: 17.17rem;
+  max-width: 300px;
+  color: black;
+  padding: 0.06rem;
+  padding-left: 0.089rem;
+  padding-bottom: 0.089rem;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+.InputBox input {
+  padding: 0.7rem;
+  // width: 17rem;
+  width: '100%';
+  background: linear-gradient(180deg, #9fdddd 3.52%, #ffffff 96.14%);
+  color: black;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+.InputBox input:hover {
+  background: white;
+}
+.InputBox input:hover::placeholder {
+  color: white;
+}
+.subscribeBtn {
+  width: 8rem;
+  background-color: #00d7fb;
+  color: black;
+  border: none;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+.rocketIcon {
+  position: absolute;
+  right: -55px;
+  bottom: 44px;
+  rotate: 0deg;
+  animation: rocket 1s ease-in 2s;
+  z-index: 11;
+}
+.pathIcon {
+  position: absolute;
+  bottom: -1px;
+  right: 25px;
+  width: 10;
+  z-index: 10;
+  width: 31rem;
+}
+.Mail1Icon {
+  // blue
+  position: absolute;
+  bottom: -30px;
+  right: 229px;
+  left: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 30;
+}
+.Mail2Icon {
+  position: absolute;
+  bottom: -7px;
+  right: 259px;
+  left: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 40;
+}
+.Mail3Icon {
+  // bluewop
+  position: absolute;
+  bottom: -65px;
+  right: 160px;
+  left: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 30;
+}
+
+@media screen and (max-width: 850px) {
+  .Mail1Icon {
+    // blue
+    left: -72px;
+    top: 238px;
+  }
+  .Mail2Icon {
+    left: 147px;
+  }
+  .Mail3Icon {
+    // bluewop
+    left: 260px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .pathIcon {
+    bottom: -30px;
+    right: 25px;
+  }
+  .rocketIcon {
+    right: -55px;
+    bottom: 10px;
+  }
+  .Mail1Icon {
+    left: 76px;
+    top: 238px;
+  }
+  .Mail2Icon {
+    left: 266px;
+  }
+  .Mail3Icon {
+    left: 371px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .Mail1Icon {
+    // blue
+    left: -117px;
+    top: 229px;
+  }
+  .Mail2Icon {
+    left: 100px;
+  }
+  .Mail3Icon {
+    // bluewop
+    left: 197px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .pathIcon,
+  .rocketIcon,
+  .Mail1Icon,
+  .Mail2Icon,
+  .Mail3Icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Mail1Icon {
+    // blue
+    left: -180px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .InputInnerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    .InputBox {
+      border-radius: 0.3rem;
+      input {
+        border-radius: 0.3rem;
+      }
+    }
+  }
+  .subscribeBtn {
+    height: 2rem;
+    width: 10rem;
+    margin-top: 1rem;
+    border-radius: 0.2rem;
+  }
+  .InputOuterContainer {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .newsLetter {
+    padding-bottom: 70px;
+  }
+}
+
+@keyframes rocket {
+  // 0% {
+  //   right: 200px;
+  //   bottom: -110px;
+  //   rotate: 10deg;
+  // }
+
+  // 70% {
+  //   right: 50px;
+  //   bottom: -40px;
+  // }
+
+  // 100% {
+  //   right: -30px;
+  //   bottom: 0px;
+  //   rotate: 0deg;
+  // }
+}

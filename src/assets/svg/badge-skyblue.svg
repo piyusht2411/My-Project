@@ -1,0 +1,21 @@
+<svg width="58" height="126" viewBox="0 0 58 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M54 125.584L29 115.584L4 125.584V0.584473H54V125.584Z" fill="url(#paint0_linear_639_2020)"/>
+<path opacity="0.5" d="M3.5 122.584V125.584L28.5 115.584L53.5 125.584V122.584L28.5 112.584L3.5 122.584Z" fill="#000C28"/>
+<path opacity="0.5" d="M3.5 124.584V125.584L28.5 115.584L53.5 125.584V124.584L28.5 114.584L3.5 124.584Z" fill="#398196"/>
+<path d="M6.5 0.584473V1.58447" stroke="#000C28" stroke-miterlimit="10"/>
+<path d="M6.5 3.58449V114.784" stroke="#000C28" stroke-miterlimit="10" stroke-dasharray="2 2"/>
+<path d="M6.5 115.784V116.784" stroke="#000C28" stroke-miterlimit="10"/>
+<path d="M50.5 0.584473V1.58447" stroke="#000C28" stroke-miterlimit="10"/>
+<path d="M50.5 3.58449V114.784" stroke="#000C28" stroke-miterlimit="10" stroke-dasharray="2 2"/>
+<path d="M50.5 115.784V116.784" stroke="#000C28" stroke-miterlimit="10"/>
+<path d="M0 9.51086L4 0.510864V9.51086H0Z" fill="#398196"/>
+<path d="M57.5 9.9845L54 0.584496V9.9845H57.5Z" fill="#398196"/>
+<defs>
+<linearGradient id="paint0_linear_639_2020" x1="29" y1="125.584" x2="29" y2="0.584473" gradientUnits="userSpaceOnUse">
+<stop stop-color="#005168"/>
+<stop offset="0.916667" stop-color="#006D8D"/>
+<stop offset="0.947917" stop-color="#17546F"/>
+<stop offset="1" stop-color="#002738"/>
+</linearGradient>
+</defs>
+</svg>

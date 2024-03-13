@@ -1,0 +1,85 @@
+.indicesBanner {
+  margin: 2rem 0;
+  .upperDiv {
+    margin-bottom: 5rem;
+    .heading {
+      text-align: center;
+      font-weight: 900;
+      font-size: 40px;
+      margin-bottom: 1rem;
+    }
+    .desc {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.4rem;
+      max-width: 30vw;
+      margin: 0 auto;
+    }
+  }
+  .lowerDiv {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    .leftDiv {
+      width: 45%;
+      .para {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.7rem;
+        margin-bottom: 1rem;
+      }
+    }
+    .rightDiv {
+      width: 50%;
+      height: 37vh;
+      overflow-y: scroll;
+    }
+    // ::-webkit-scrollbar {
+    //     width: 10px;
+    //     }
+    // ::-webkit-scrollbar-track {
+    //     background: #274f8a;
+    // }
+
+    // /* Handle */
+    // ::-webkit-scrollbar-thumb {
+    //     background: grey;
+    // }
+
+    // /* Handle on hover */
+    // ::-webkit-scrollbar-thumb:hover {
+    //     background: #555;
+    // }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .indicesBanner {
+    .upperDiv {
+      .desc {
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 580px) and (max-width: 767px) {
+  .indicesBanner {
+    .upperDiv {
+      .desc {
+        max-width: 60%;
+      }
+    }
+    .lowerDiv {
+      flex-direction: column-reverse;
+      .leftDiv {
+        width: 100%;
+      }
+      .rightDiv {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

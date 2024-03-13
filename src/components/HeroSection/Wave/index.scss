@@ -1,0 +1,35 @@
+.heroWave {
+  position: relative;
+
+  .wave {
+    margin-bottom: -5px;
+  }
+
+  #mobileImg {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    max-width: 600px;
+    // max-height: 600px;
+    animation: floatAnim 5s ease-in-out infinite;
+  }
+
+  @keyframes floatAnim {
+    0% {
+      transform: translate(0, 5%);
+    }
+    50% {
+      transform: translate(0, 7%);
+    }
+    100% {
+      transform: translate(0, 5%);
+    }
+  }
+
+  @media screen and (max-width: 662px) {
+    #mobileImg {
+      left: auto;
+      right: auto;
+    }
+  }
+}

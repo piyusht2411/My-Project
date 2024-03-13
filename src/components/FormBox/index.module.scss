@@ -1,0 +1,501 @@
+.formBox {
+  background-image: linear-gradient(#0f204e, #300a6e);
+  position: relative;
+  margin-bottom: 3rem;
+  .boxWithInputs {
+    padding: 1rem 0;
+    .amountInvested {
+      width: 100%;
+      p {
+        color: #00d7fb;
+        font-weight: 700;
+        font-size: 14px;
+      }
+    }
+    .borderDiv {
+      height: 6px;
+      margin: 2rem 0;
+      background-image: linear-gradient(to bottom, #274f8a, #161955, #000c28);
+      border-radius: 0.2rem;
+    }
+  }
+  .borderDiv {
+    height: 6px;
+    margin: 2rem 0;
+    background-image: linear-gradient(to bottom, #274f8a, #161955, #000c28);
+    border-radius: 0.2rem;
+  }
+  .middleDiv {
+    .bitcoin {
+      p {
+        color: #00d7fb;
+        font-weight: 700;
+        font-size: 14px;
+      }
+    }
+  }
+  .buttonV2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btnV2 {
+    padding: 0.8rem 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .waveSvg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  .coinsSvg {
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+    z-index: 10;
+  }
+  .helpSvg {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    z-index: 10;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .formBox {
+    padding: 0;
+    .boxWithInputs {
+      padding: 30px 30px;
+      .amountInvested {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        p {
+          width: 50%;
+          line-height: 32px;
+          border-bottom: 1px dashed #4171b9;
+        }
+      }
+
+      .dateDivs {
+        .dateTitles {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 1rem;
+          p {
+            color: #00d7fb;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 32px;
+          }
+        }
+        .dateBoxes {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          p {
+            color: #00d7fb;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 32px;
+          }
+          .borderBetweenDivs {
+            flex: 1;
+            height: 1%;
+            border: 1px dashed #4171b9;
+          }
+          .helpLogo {
+            display: none;
+          }
+        }
+      }
+    }
+    .borderDiv {
+      padding: 0 30px;
+    }
+    .middleDiv {
+      padding: 0 30px;
+      .bitcoin {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 2rem;
+        p {
+          width: 50%;
+          line-height: 32px;
+          border-bottom: 1px dashed #4171b9;
+        }
+        div {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          gap: 1.3rem;
+        }
+      }
+      .index {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 1rem;
+        .graphWithTitle {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.8rem;
+          p {
+            max-width: 60px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.3rem;
+            color: #00d7fb;
+          }
+        }
+        .enabledButtons {
+          display: flex;
+          flex: 1;
+          justify-content: space-between;
+          div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            p {
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 1rem;
+            }
+            .radioButton {
+              background-color: #000c28;
+              border-radius: 10rem;
+            }
+          }
+          button {
+            background-color: transparent;
+            outline: none;
+            border: none;
+          }
+        }
+        .disabledButtons {
+          display: flex;
+          display: none;
+          flex: 1;
+          justify-content: space-between;
+          div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            p {
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 1rem;
+            }
+          }
+          button {
+            background-color: transparent;
+            outline: none;
+            border: none;
+          }
+        }
+      }
+    }
+    .detailsDiv {
+      padding: 0 30px;
+      margin-bottom: 1rem;
+      .imperium {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px dashed #4171b9;
+        p {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 40px;
+          span {
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 40px;
+            color: #00d7fb;
+          }
+        }
+      }
+      .lex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px dashed #4171b9;
+        p {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 40px;
+          span {
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 40px;
+            color: #00d7fb;
+          }
+        }
+      }
+      .earning {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px dashed #4171b9;
+        p {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 40px;
+          span {
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 40px;
+            color: #00d7fb;
+          }
+        }
+      }
+    }
+    .btnV2 {
+      padding: 1rem 3rem;
+      margin-bottom: 5rem;
+    }
+    .coinsSvg {
+      display: none;
+    }
+    .helpSvg {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .formBox {
+    .coinsSvg {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 581px) {
+  .formBox {
+    max-width: 800px;
+    padding: 0;
+    border-radius: 0.6rem;
+    .borderDiv {
+      height: 6px;
+      margin: 0rem 2rem;
+      background-image: linear-gradient(to bottom, #274f8a, #161955, #000c28);
+      border-radius: 0.2rem;
+    }
+    .boxWithInputs {
+      display: flex;
+      justify-content: center;
+      .amountInvested {
+        width: 33%;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        p {
+          line-height: 32px;
+        }
+      }
+      .dateDivs {
+        width: 62%;
+        .dateTitles {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 6rem 0 3rem;
+          p {
+            color: #00d7fb;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 32px;
+          }
+        }
+        .dateBoxes {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          p {
+            color: #00d7fb;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 32px;
+          }
+          .borderBetweenDivs {
+            flex: 1;
+            height: 1%;
+            border: 1px dashed #4171b9;
+            max-width: 100px;
+          }
+          .helpLogo {
+            background-color: #00d7fb;
+            border-radius: 10rem;
+            color: #000c28;
+          }
+          .helpLogo:hover {
+            background-color: #000c28;
+            border-radius: 1rem;
+            color: #00d7fb;
+            border-color: 2px solid #00d7fb;
+          }
+        }
+      }
+    }
+    .middleDiv {
+      display: flex;
+      justify-content: center;
+      // margin: 1rem 0;
+      padding: 2rem 0;
+      .bitcoin {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+          line-height: 32px;
+        }
+        div {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          gap: 1.3rem;
+        }
+      }
+      .index {
+        width: 67%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        .graphWithTitle {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.8rem;
+          p {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.3rem;
+            color: #00d7fb;
+          }
+        }
+        .enabledButtons {
+          display: flex;
+          flex: 1;
+          justify-content: center;
+          gap: 1.8rem;
+          div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            p {
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 1rem;
+            }
+            .radioButton {
+              background-color: #000c28;
+              border-radius: 10rem;
+            }
+          }
+          button {
+            background-color: transparent;
+            outline: none;
+            border: none;
+          }
+        }
+        .disabledButtons {
+          opacity: 0.3;
+          display: flex;
+          flex: 1;
+          justify-content: center;
+          gap: 1.8rem;
+          div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            p {
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 1rem;
+            }
+          }
+          button {
+            background-color: transparent;
+            outline: none;
+            border: none;
+          }
+        }
+      }
+    }
+    .detailsDiv {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding: 1rem 0;
+      .imperium {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        p {
+          font-weight: 300;
+          font-size: 16px;
+          span {
+            font-weight: 900;
+            font-size: 16px;
+            color: #00d7fb;
+          }
+        }
+      }
+      .lex {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        p {
+          font-weight: 300;
+          font-size: 16px;
+          span {
+            font-weight: 900;
+            font-size: 16px;
+            color: #00d7fb;
+          }
+        }
+      }
+      .earning {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        p {
+          font-weight: 300;
+          font-size: 16px;
+          span {
+            font-weight: 900;
+            font-size: 16px;
+            color: #00d7fb;
+          }
+        }
+      }
+    }
+  }
+}

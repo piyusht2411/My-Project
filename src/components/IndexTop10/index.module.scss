@@ -1,0 +1,268 @@
+.indexTop10 {
+  h1 {
+    font-weight: 300;
+    line-height: 28.8px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: #9fdddd;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19.2px;
+    text-align: center;
+    span {
+      color: white;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19.2px;
+    }
+  }
+  .table {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    .fixed {
+      border-right: 1px solid #5773dd;
+      width: 20%;
+      z-index: 99;
+      .bottomRow {
+        border-bottom-left-radius: 0.5rem;
+      }
+      .box {
+        height: 60px;
+        background-color: #274f8a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border-top-left-radius: 0.5rem;
+        .heading {
+          font-weight: 900;
+          font-size: 12px;
+          line-height: 14.4px;
+          color: #00d7fb;
+        }
+      }
+      .coin {
+        height: 60px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        padding-left: 1rem;
+        .indexNo {
+          p {
+            color: #00d7fb;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 14.4px;
+          }
+        }
+        .imageDiv {
+          .coinLogo {
+            width: 100%;
+          }
+        }
+        .nameDiv {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: baseline;
+          height: 100%;
+          .coinName {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16.8px;
+            color: white;
+          }
+          .coinAbbr {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16.8px;
+            color: white;
+          }
+        }
+      }
+    }
+    .scrollable {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 83%;
+
+      .price {
+        width: 21%;
+        border-right: 1px solid #5773dd;
+        .box {
+          height: 60px;
+          background-color: #274f8a;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .heading {
+            font-weight: 900;
+            font-size: 12px;
+            line-height: 14.4px;
+            color: #00d7fb;
+          }
+        }
+        .coinPrice {
+          p {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 17px;
+            letter-spacing: 0em;
+            color: white;
+          }
+        }
+      }
+      .dominance {
+        width: 21%;
+        border-right: 1px solid #5773dd;
+        .box {
+          height: 60px;
+          background-color: #274f8a;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          .heading {
+            font-weight: 900;
+            font-size: 12px;
+            line-height: 14.4px;
+            color: #00d7fb;
+          }
+        }
+        .coinDominance {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 0.3rem;
+          p {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 17px;
+            letter-spacing: 0em;
+            color: white;
+          }
+          .progressBar {
+            width: 60%;
+            background-color: #274f8a;
+            height: 8px;
+            border-radius: 0.3rem;
+            padding: 1px;
+            position: relative;
+          }
+        }
+      }
+      .marketCap {
+        width: 21%;
+        border-right: 1px solid #5773dd;
+        .box {
+          height: 60px;
+          background-color: #274f8a;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .heading {
+            font-weight: 900;
+            font-size: 12px;
+            line-height: 14.4px;
+            color: #00d7fb;
+          }
+        }
+        .coinMarketCap {
+          p {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 17px;
+            letter-spacing: 0em;
+            color: white;
+          }
+        }
+      }
+      .change {
+        width: 37%;
+        .bottomRow {
+          border-bottom-right-radius: 0.5rem;
+        }
+        .box {
+          height: 60px;
+          background-color: #274f8a;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          // border-top-right-radius: 0.5rem;
+          .heading {
+            font-weight: 900;
+            font-size: 12px;
+            line-height: 14.4px;
+            color: #00d7fb;
+          }
+        }
+        .coinChange {
+          gap: 1rem;
+          p {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16.8px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .table {
+    .fixed {
+      width: 300px !important;
+      box-shadow: 5px 0px 20px #000000;
+    }
+    .scrollable {
+      justify-content: unset !important;
+      width: 100% !important;
+      overflow-x: auto !important;
+      scrollbar-width: none !important;
+      .price {
+        min-width: 200px;
+      }
+      .dominance {
+        min-width: 200px;
+      }
+      .marketCap {
+        min-width: 200px;
+      }
+      .change {
+        min-width: 200px;
+      }
+    }
+  }
+
+  .indexTop10 {
+    h1 {
+      font-size: 21px;
+      line-height: 25.2px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 21px;
+      span {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 520px) {
+  .indexTop10 {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+}
